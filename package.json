@@ -1,0 +1,60 @@
+{
+  "name": "cursor-settings",
+  "displayName": "Cursor Settings",
+  "description": "Tweak your cursor style, width, and blinking on the fly.",
+  "publisher": "BernardoPires",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drbap/cursor-settings-for-vscode"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cursor settings",
+    "caret settings",
+    "cursor style",
+    "cursor blinking",
+    "cursor width"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursor-settings.startQuickPick",
+        "title": "Cursor Settings"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9"
+  },
+  "galleryBanner": {
+    "color": "#001122",
+    "theme": "dark"
+  },
+  "license": "MIT"
+}
