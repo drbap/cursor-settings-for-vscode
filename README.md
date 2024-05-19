@@ -1,5 +1,7 @@
 # Cursor Settings extension for VS Code
 
+![Cursor Settings extension for VS Code](https://raw.githubusercontent.com/drbap/cursor-settings-for-vscode/main/images/cursor_settings_01.png)
+
 ## Features
 
 - Quick cursor customization: Change your **cursor style**, **cursor blinking**, and **cursor width** by clicking on the "**Cursor**" (it will open a menu with options to quickly adjust the cursor).
