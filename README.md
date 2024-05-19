@@ -4,11 +4,7 @@
 
 ## Features
 
-- Quick cursor customization: Change your **cursor style**, **cursor blinking**, and **cursor width** by clicking on the "**Cursor**" (it will open a menu with options to quickly adjust the cursor).
-
-- Enhanced Comfort: Create a coding environment that's tailored to your visual preferences, promoting a more comfortable coding experience.
-
-- Boosted Efficiency: Quickly customize your cursor settings without opening the **Settings tab** or `settings.json`, allowing you to focus and change the appearance of the cursor to fit your mood and task.
+- Quick cursor customization: Change your **cursor style**, **cursor blinking**, and **cursor width** by clicking on the "**Cursor**" status bar item (it will open a Quick Pick menu with options to adjust the cursor).
 
 - It won't change your favorite theme cursor color.
 
@@ -16,10 +12,10 @@ I hope you find this extension useful.
 
 ## Extension
 
-- **Cursor** status bar item. You can open the menu to select editor cursor **style**, editor cursor **blinking** and editor cursor **width** by clicking on the status bar item and/or by using the command palette and selecting "**Cursor Settings**".
+- **Cursor** status bar item. You can open the Quick Pick menu to select editor cursor **style**, editor cursor **blinking** and editor cursor **width** by clicking on the status bar item and/or by using the command palette and selecting "**Cursor Settings**".
   - Cursor Style.
   - Cursor Blinking.
-  - Cursor Width (2 to 5).
+  - Cursor Width.
 
 - Access cursor settings from the command palette by pressing (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on Mac) and typing `Cursor Settings`.
 
