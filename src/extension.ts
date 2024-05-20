@@ -68,12 +68,19 @@ export function activate(context: vscode.ExtensionContext) {
 function updateCS(prop: string, val: string | number, s: vscode.WorkspaceConfiguration, arr: (string | number)[]): void {
 	if (typeof val === 'string') {
 		if (arr.includes(val)) {
-			s.update(prop, val, vscode.ConfigurationTarget.Workspace);
+			s.update(prop, val, vscode.ConfigurationTarget.Global);
+			if (vscode.workspace.name !== undefined) {
+				s.update(prop, val, vscode.ConfigurationTarget.Workspace);
+			}
 		}
 	} else if (typeof val === 'number') {
 		if (arr.includes(val)) {
-			s.update(prop, val, vscode.ConfigurationTarget.Workspace);
-			s.update('editor.cursorStyle', 'line', vscode.ConfigurationTarget.Workspace);
+			s.update(prop, val, vscode.ConfigurationTarget.Global);
+			s.update('editor.cursorStyle', 'line', vscode.ConfigurationTarget.Global);
+			if (vscode.workspace.name !== undefined) {
+				s.update(prop, val, vscode.ConfigurationTarget.Workspace);
+				s.update('editor.cursorStyle', 'line', vscode.ConfigurationTarget.Workspace);
+			}
 		}
 	} else {
 		vscode.window.showErrorMessage("Invalid cursor setting value");
