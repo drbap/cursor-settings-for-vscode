@@ -3,7 +3,7 @@
   "displayName": "Cursor Settings",
   "description": "Tweak your cursor style, width, and blinking on the fly.",
   "publisher": "BernardoPires",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.76.0"
   },
